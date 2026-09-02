@@ -1,0 +1,43 @@
+// {
+//   "version": "2.0.0",
+//   "tasks": [
+//     {
+//       "label": "Run CP",
+//       "type": "shell",
+//       "command": "g++ -std=c++17 -Wall '${file}' -o '${fileDirname}/main' && '${fileDirname}/main' < '${fileDirname}/input.txt' > '${fileDirname}/output.txt'",
+//       "group": {
+//         "kind": "build",
+//         "isDefault": true
+//       },
+//       "presentation": {
+//         "reveal": "silent",
+//         "panel": "shared",
+//         "clear": true,
+//         "focus": false
+//       },
+//       "problemMatcher": []
+//     }
+//   ]
+// }
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run CP",
+      "type": "shell",
+      "command": "g++ -std=c++17 -Wall \"${file}\" -o \"${fileDirname}/main\" && \"${fileDirname}/main\" < \"${fileDirname}/input.txt\" > \"${fileDirname}/output.txt\"",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "clear": true,
+        "focus": false
+      },
+      "problemMatcher": []
+    }
+  ]
+}
